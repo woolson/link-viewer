@@ -1,0 +1,43 @@
+.decoder {
+  h3::after {
+    position: absolute;
+    content: ' ';
+    left: 50%;
+    bottom: 2px;
+    height: 10px;
+    width: 80px;
+    margin-left: -40px;
+    background-color: @primary-color;
+    opacity: .5;
+    z-index: 0;
+  }
+
+  .ant-tree {
+    background: transparent;
+    padding-top: 10px;
+
+    .ant-tree-treenode {
+      width: 100%;
+    }
+
+    .ant-tree-switcher {
+      background: transparent !important;
+    }
+
+    .ant-tree-node-content-wrapper {
+      width: 1px;
+      flex: 1;
+    }
+  }
+
+  .node {
+    &__param .key,
+    &__param-key .key {
+      color: rgba(@primary-color, .7);
+
+      .ant-typography {
+        color: @primary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import '~antd/lib/tabs/style/index.less';
+@import '~antd/lib/input/style/index.less';
+@import '~antd/lib/tree/style/index.less';
+@import '~antd/lib/switch/style/index.less';
+@import '~antd/lib/typography/style/index.less';
+@import '~antd/lib/tooltip/style/index.less';
+@import '~antd/lib/result/style/index.less';
+@import '~antd/lib/list/style/index.less';
+@import '~antd/lib/button/style/index.less';
+@import '~antd/lib/message/style/index.less';
+@import '~antd/lib/popover/style/index.less';
+@import '~antd/lib/pagination/style/index.less';
+// @tailwind base;
+// @tailwind components;
+@tailwind utilities;
+
+html, body, textarea {
+  margin: 0;
+  padding: 0;
+  font-family: Fira Code, mono;
+}
+
+.container {
+  width: 750px;
+  .ant-tabs-nav {
+    margin-bottom: 0;
+  }
+  .ant-tabs-tab {
+    margin: 0;
+  }
+  .ant-tabs-tab-btn {
+    padding: 0 25px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+    transition: none;
+  }
+  .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-bottom > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-bottom > div > .ant-tabs-nav .ant-tabs-ink-bar {
+    height: 4px;
+  }
+  .ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
+    border-width: 3px;
+  }
+}
